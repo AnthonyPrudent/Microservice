@@ -1,6 +1,6 @@
 # Microservice A - Python list scrambler
 
-**To request data from the microservice, use ZeroMQ to send a string tuple of the required paramters.**
+**To request data from the microservice running locally on your machine, use ZeroMQ to send a string tuple of the required paramters.**
 **The client must send a tuple with a list, desired final size of the scrambled list, and the indices**
 **that you would like to see elements of. If the input is incorrect, you will recieve an error message.**
 **Follow the example below:**
