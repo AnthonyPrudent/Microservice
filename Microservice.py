@@ -12,7 +12,7 @@ while True:
 
     # Waits until a message is received
     message = socket.recv()
-    decotded_message = message.decode()
+    decoded_message = message.decode()
     print(f"Receiving message: {decoded_message}")
 
     time.sleep(3)
