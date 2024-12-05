@@ -10,17 +10,14 @@ socket.bind("tcp://*:5555")
 
 while True:
 
-    # Waits until a message is received
     message = socket.recv()
     decoded_message = message.decode()
     print(f"Receiving message: {decoded_message}")
 
     time.sleep(3)
 
-    # Converts message from string
     converted_message = ast.literal_eval(decoded_message)
 
-    # Validates the data in the received message
     if type(converted_message) is tuple:
 
         try:
